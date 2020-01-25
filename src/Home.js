@@ -10,14 +10,15 @@ import learning from "./learning.png"
 function Home() {
   return (
     <Fragment>
-      <div>Looking for position as a developer</div>
+      <Announcement>Currently still available for full-time/co-op/internship opportunities</Announcement>
       <ContainerDiv>
         <AboutDiv>
           <div className="profile-image">
             <img src={profile} alt="profile-picture"/>
           </div>
           <h2>Paul Femi-Gege</h2>
-          <div className="career">Software Engineer (Final Year)</div>
+          <div className="career">Software Engineer (Final Year at UOIT)</div>
+          <div> gege.temi@gmail.com </div>
         </AboutDiv>
         <div className="grid-points">
           <div className="headings">
@@ -59,25 +60,24 @@ function Home() {
           </div>
         </div>
 
-        <Link className="grid-points project" to="/project2">
+        <a className="grid-points project" href="https://arcane-taiga-53595.herokuapp.com/">
           <ProjectDiv> 
               <div className="headings">
                 <img src={learning} alt="Learning"/>
                 <h3 className="header">Project 2</h3>
               </div>
               <div className="content">
-                <h2>E-commerce Store</h2>
-                <div>Complete functional demo store (Full-Stack)</div>
+                <h2>Sign-in/Sign-up page</h2>
+                <div>Toggle between signin and signup (click buttons in transparent box - not actual form) - (Front-end)</div>
                 <div>Click here view project</div>
-
               </div>
           </ProjectDiv>
-        </Link>
+        </a>
 
         <div className="grid-points">
           <div className="headings">
             <img src={learning} alt="Learning"/>
-            <h3 className="header">Continuous Learning:</h3>
+            <h3 className="header">Future Continuous Learning:</h3>
           </div>
           <div className="content">
             <div>React Native</div>
@@ -86,11 +86,33 @@ function Home() {
           </div>
         </div>
 
+        <a className="grid-points project" href="https://shielded-dawn-21297.herokuapp.com/">
+          <ProjectDiv> 
+              <div className="headings">
+                <img src={learning} alt="Learning"/>
+                <h3 className="header">Project 3</h3>
+              </div>
+              <div className="content">
+                <h2>Sign-in/Sign-up page (Another)</h2>
+                <div>Functional demo - (Front-end)</div>
+                <div>Click here view project</div>
+
+              </div>
+          </ProjectDiv>
+        </a>
+
 
       </ContainerDiv>
     </Fragment>
   );
 }
+
+const Announcement = styled.div`
+  width: 100%;
+  text-align: center; 
+  background-color: #FF6966;
+  font-size: 20px;
+`
 
 const ContainerDiv = styled.div`
   width: 80%;
