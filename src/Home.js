@@ -11,7 +11,7 @@ import construction from "./construction.png";
 function Home() {
   return (
     <Fragment>
-      <Announcement>Currently still available for full-time/co-op/internship opportunities</Announcement>
+      <Announcement>Currently available for full-time/co-op/internship opportunities</Announcement>
       <ContainerDiv>
         
         <AboutDiv>
@@ -56,7 +56,7 @@ function Home() {
                   <h3 className="header">Project 1</h3>
                 </div>
                 <div className="content">
-                  <div>Developed from start to finish showcasing knowledge of the Mongo Express React and Node.js (MERN) stack. This store comes with functionalities such as CRUD on store products and categories as well as other items. There are 2 types of users; admin and regular users. Regular users are can add items to their cart filter database for products and much more. (click here to try it out) 
+                  <div>Developed from start to finish showcasing knowledge of the Mongo Express React and Node.js (MERN) stack. Click here and try it out, it has functionalities just like any online store you visit.
                   </div>
                 </div>
             </ProjectDiv>
@@ -97,7 +97,7 @@ function Home() {
                 </div>
                 <div className="content">
                   <div>
-                    This project showcases a responsive sign-up/sign-in (using React and CSS) that displays the appropriate content for all screen sizes. The page is also dynamic and serves as both the sign-up and sign-in page with simple buttons to help switch states between the sign-up form and sign-in form. The forms however do not have any functional purpose.(click here test how it renders on different screen sizes - simply adjust your browser size)  
+                    This project showcases a responsive sign-up/sign-in (using React and CSS) that displays the appropriate content for all screen sizes. The page is also dynamic and serves as both the sign-up and sign-in page. Using buttons to switch states between the sign-up form and sign-in form. Click here to try it out, dont forget to try it on different screen sizes - simply adjust your browser size.  
                   </div>
                 </div>
             </ProjectDiv>
@@ -139,7 +139,7 @@ function Home() {
                 </div>
                 <div className="content">
                   <div>
-                    This is another project which showcases a responsive sign-in/sign-up page (using React and CSS) that displays the appropriate content for all screen sizes. (click here test how it renders on different screen sizes - simply adjust your browser size) 
+                    This is another project which showcases a responsive sign-in/sign-up page (using React and CSS) that displays appropriate content for all screen sizes. Click here test how it renders on different screen sizes - simply adjust your browser size) 
                   </div>
                 </div>
             </ProjectDiv>
