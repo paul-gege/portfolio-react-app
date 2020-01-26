@@ -203,11 +203,11 @@ const ContainerDiv = styled.div`
         transition: transform 0.8s;
       }
 
-      .card:hover .back {
+      .card:hover .back, .card:active .back  {
         transform: rotateY(0deg);
       }
 
-      .card:hover .front {
+      .card:hover .front, .card:active .front {
         transform: rotateY(-180deg);
       }
 
