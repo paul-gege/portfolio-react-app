@@ -5,13 +5,15 @@ import styled from "styled-components";
 import profile from "./Profile.jpg"
 import strengths from "./strength.png"
 import skills from "./skills.png";
-import learning from "./learning.png"
+import learning from "./learning.png";
+import construction from "./construction.png";
 
 function Home() {
   return (
     <Fragment>
       <Announcement>Currently still available for full-time/co-op/internship opportunities</Announcement>
       <ContainerDiv>
+        
         <AboutDiv>
           <div className="profile-image">
             <img src={profile} alt="profile-picture"/>
@@ -20,6 +22,7 @@ function Home() {
           <div className="career">Software Engineer (Final Year at UOIT)</div>
           <div> gege.temi@gmail.com </div>
         </AboutDiv>
+
         <div className="grid-points">
           <div className="headings">
             <img src={strengths} alt="strengths"/>
@@ -31,21 +34,34 @@ function Home() {
             <div>In-depth understanding of CSS</div>
           </div>
         </div>
+        <div className="card">
+          <a className="grid-points project front" href="http://www.magnyx.com">
+            <ProjectDiv> 
+                <div className="headings">
+                  <img src={learning} alt="Learning"/>
+                  <h3 className="header">Project 1</h3>
+                </div>
+                <div className="content">
+                  <h2>E-commerce Store</h2>
+                  <div>(Full-Stack) Hover for more details</div>
+                  <div>Click here view project</div>
 
-        <a className="grid-points project" href="http://www.magnyx.com">
-          <ProjectDiv> 
-              <div className="headings">
-                <img src={learning} alt="Learning"/>
-                <h3 className="header">Project 1</h3>
-              </div>
-              <div className="content">
-                <h2>E-commerce Store</h2>
-                <div>Complete functional demo store (Full-Stack)</div>
-                <div>Click here view project</div>
-
-              </div>
-          </ProjectDiv>
-        </a>
+                </div>
+            </ProjectDiv>
+          </a>
+          <a className="grid-points project back" href="http://www.magnyx.com">
+            <ProjectDiv> 
+                <div className="headings">
+                  <img src={learning} alt="Learning"/>
+                  <h3 className="header">Project 1</h3>
+                </div>
+                <div className="content">
+                  <div>Developed from start to finish showcasing knowledge of the Mongo Express React and Node.js (MERN) stack. This store comes with functionalities such as CRUD on store products and categories as well as other items. There are 2 types of users; admin and regular users. Regular users are can add items to their cart filter database for products and much more. (click here to try it out) 
+                  </div>
+                </div>
+            </ProjectDiv>
+          </a>
+        </div>
 
         <div className="grid-points">
           <div className="headings">
@@ -59,20 +75,34 @@ function Home() {
             <div>Effective communication and interpersonal skills</div> 
           </div>
         </div>
-
-        <a className="grid-points project" href="https://arcane-taiga-53595.herokuapp.com/">
-          <ProjectDiv> 
-              <div className="headings">
-                <img src={learning} alt="Learning"/>
-                <h3 className="header">Project 2</h3>
-              </div>
-              <div className="content">
-                <h2>Sign-in/Sign-up page</h2>
-                <div>Toggle between signin and signup (click buttons in transparent box - not actual form) - (Front-end)</div>
-                <div>Click here view project</div>
-              </div>
-          </ProjectDiv>
-        </a>
+        <div className="card">
+          <a className="grid-points project front" href="https://arcane-taiga-53595.herokuapp.com/">
+            <ProjectDiv> 
+                <div className="headings">
+                  <img src={learning} alt="Learning"/>
+                  <h3 className="header">Project 2</h3>
+                </div>
+                <div className="content">
+                  <h2>Sign-in/Sign-up page</h2>
+                  <div>(Front-end) Hover for more details</div>
+                  <div>Click here view project</div>
+                </div>
+            </ProjectDiv>
+          </a>
+          <a className="grid-points project back" href="https://arcane-taiga-53595.herokuapp.com/">
+            <ProjectDiv> 
+                <div className="headings">
+                  <img src={learning} alt="Learning"/>
+                  <h3 className="header">Project 2</h3>
+                </div>
+                <div className="content">
+                  <div>
+                    This project showcases a responsive sign-up/sign-in (using React and CSS) that displays the appropriate content for all screen sizes. The page is also dynamic and serves as both the sign-up and sign-in page with simple buttons to help switch states between the sign-up form and sign-in form. The forms however do not have any functional purpose.(click here test how it renders on different screen sizes - simply adjust your browser size)  
+                  </div>
+                </div>
+            </ProjectDiv>
+          </a>
+        </div>
 
         <div className="grid-points">
           <div className="headings">
@@ -85,21 +115,43 @@ function Home() {
             <div>Data Analytics</div>  
           </div>
         </div>
+      
+        <div className="card">
+          <a className="grid-points project front" href="https://shielded-dawn-21297.herokuapp.com/">
+            <ProjectDiv> 
+                <div className="headings">
+                  <img src={learning} alt="Learning"/>
+                  <h3 className="header">Project 3</h3>
+                </div>
+                <div className="content">
+                  <h2>Sign-in/Sign-up page (Another)</h2>
+                  <div>(Front-end) Hover for more details</div>
+                  <div>Click here view project</div>
 
-        <a className="grid-points project" href="https://shielded-dawn-21297.herokuapp.com/">
-          <ProjectDiv> 
-              <div className="headings">
-                <img src={learning} alt="Learning"/>
-                <h3 className="header">Project 3</h3>
-              </div>
-              <div className="content">
-                <h2>Sign-in/Sign-up page (Another)</h2>
-                <div>Functional demo - (Front-end)</div>
-                <div>Click here view project</div>
+                </div>
+            </ProjectDiv>
+          </a>
+          <a className="grid-points project back" href="https://shielded-dawn-21297.herokuapp.com/">
+            <ProjectDiv> 
+                <div className="headings">
+                  <img src={learning} alt="Learning"/>
+                  <h3 className="header">Project 3</h3>
+                </div>
+                <div className="content">
+                  <div>
+                    This is another project which showcases a responsive sign-in/sign-up page (using React and CSS) that displays the appropriate content for all screen sizes. (click here test how it renders on different screen sizes - simply adjust your browser size) 
+                  </div>
+                </div>
+            </ProjectDiv>
+          </a>
+        </div>
 
-              </div>
-          </ProjectDiv>
-        </a>
+        <div className="grid-points">
+          <div className="headings">
+            <img src={construction} alt="Under construction"/>
+            <h3 className="header">Working towards more...</h3>
+          </div>
+        </div>
 
 
       </ContainerDiv>
@@ -122,6 +174,43 @@ const ContainerDiv = styled.div`
   grid-auto-rows: 1fr;
   grid-gap: 20px;
 
+      .card {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        perspective: 800px;
+      }
+
+      .front, .back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+      }
+
+      .front {
+        background-color: black;
+        color: white;
+        transition: transform 0.8s;
+      }
+
+      .back {
+        background-color: white;
+        color: black;
+        transform: rotateY(180deg);
+        transition: transform 0.8s;
+      }
+
+      .card:hover .back {
+        transform: rotateY(0deg);
+      }
+
+      .card:hover .front {
+        transform: rotateY(-180deg);
+      }
+
   .grid-points {
     box-shadow: 0px 5px 7px #E5E5E5;
     width: 100%;
@@ -132,14 +221,7 @@ const ContainerDiv = styled.div`
     justify-content: space-around;
   }
 
-  .project:hover  {
-    background-color: white;
-    color: black;
-  }
-
   .project{
-    background-color: black;
-    color: white;
     text-decoration: none;
   }
   
