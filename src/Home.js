@@ -11,7 +11,7 @@ import construction from "./construction.png";
 function Home() {
   return (
     <Fragment>
-      <Announcement>Currently available for full-time/co-op/internship opportunities</Announcement>
+      <Announcement>Currently available for full-time opportunities</Announcement>
       <ContainerDiv>
         
         <AboutDiv>
@@ -30,7 +30,7 @@ function Home() {
           </div>
           <div className="content">
             <div>Full-Stack Development (Reactjs & Node.js)</div>
-            <div>Experience with Python</div>
+            <div>Experience with Python & Java</div>
             <div>In-depth understanding of CSS</div>
           </div>
         </div>
@@ -76,20 +76,20 @@ function Home() {
           </div>
         </div>
         <div className="card">
-          <a className="grid-points project front" href="https://arcane-taiga-53595.herokuapp.com/">
+          <a className="grid-points project front" href="https://dry-reef-15467.herokuapp.com/">
             <ProjectDiv> 
                 <div className="headings">
                   <img src={learning} alt="Learning"/>
                   <h3 className="header">Project 2</h3>
                 </div>
                 <div className="content">
-                  <h2>Sign-in/Sign-up page</h2>
+                  <h2>Stock Watchlist & News Application</h2>
                   <div>(Front-end) Hover for more details</div>
                   <div>Click here view project</div>
                 </div>
             </ProjectDiv>
           </a>
-          <a className="grid-points project back" href="https://arcane-taiga-53595.herokuapp.com/">
+          <a className="grid-points project back" href="https://dry-reef-15467.herokuapp.com/">
             <ProjectDiv> 
                 <div className="headings">
                   <img src={learning} alt="Learning"/>
@@ -97,7 +97,7 @@ function Home() {
                 </div>
                 <div className="content">
                   <div>
-                    This project showcases a responsive sign-up/sign-in (using React and CSS) that displays the appropriate content for all screen sizes. The page is also dynamic and serves as both the sign-up and sign-in page. Using buttons to switch states between the sign-up form and sign-in form. Click here to try it out, dont forget to try it on different screen sizes - simply adjust your browser size.  
+                    This project was created to help me keep track of stock prices of companies I'm intereted in. This project showcases my ability to work with API's, read through documentation and utilize Firebase in react applications.
                   </div>
                 </div>
             </ProjectDiv>
@@ -149,10 +149,38 @@ function Home() {
         <div className="grid-points">
           <div className="headings">
             <img src={construction} alt="Under construction"/>
-            <h3 className="header">Working towards more...</h3>
+            <h3 className="header">Always working towards more, check back here and there to see new projects</h3>
           </div>
         </div>
 
+        <div className="card">
+          <a className="grid-points project front" href="https://arcane-taiga-53595.herokuapp.com/">
+            <ProjectDiv> 
+                <div className="headings">
+                  <img src={learning} alt="Learning"/>
+                  <h3 className="header">Project 4</h3>
+                </div>
+                <div className="content">
+                  <h2>Sign-in/Sign-up page</h2>
+                  <div>(Front-end) Hover for more details</div>
+                  <div>Click here view project</div>
+                </div>
+            </ProjectDiv>
+          </a>
+          <a className="grid-points project back" href="https://arcane-taiga-53595.herokuapp.com/">
+            <ProjectDiv> 
+                <div className="headings">
+                  <img src={learning} alt="Learning"/>
+                  <h3 className="header">Project 4</h3>
+                </div>
+                <div className="content">
+                  <div>
+                    This project showcases a responsive sign-up/sign-in (using React and CSS) that displays the appropriate content for all screen sizes. The page is also dynamic and serves as both the sign-up and sign-in page. Using buttons to switch states between the sign-up form and sign-in form. Click here to try it out, dont forget to try it on different screen sizes - simply adjust your browser size.  
+                  </div>
+                </div>
+            </ProjectDiv>
+          </a>
+        </div>
 
       </ContainerDiv>
     </Fragment>
